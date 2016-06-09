@@ -34,7 +34,13 @@ Run (with saxon):
   
 ###2. JavaScript
 
-TODO: create sample
+Read a track file via XmlHTTPRequest method, get all track points and build a pathString from @lat/@lon.
+
+Run:
+
+    simpy open italy-map-js.svg in your fav browser. 
+    
+*Make sure to enable XmlHTTPRequest for file:// protocoll, otherwise run the request from a local http-server.*
 
 ###3. Julia
 
