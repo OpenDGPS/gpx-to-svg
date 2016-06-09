@@ -50,7 +50,7 @@ gpx-to-svg.jl uses LightXML to parse both the GPX track file and the SVG.
 
 Run:
 
-    copy the gpx-to-svg.jl in jupyter notebook and make shure the gpx/1k.gpx file is available  
+    copy the gpx-to-svg.jl into a jupyter notebook and make sure the gpx/1k.gpx file is available  
 
 ###4. C
 
