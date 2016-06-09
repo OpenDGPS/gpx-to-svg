@@ -44,7 +44,13 @@ Run:
 
 ###3. Julia
 
-TODO: create sample
+gpx-to-svg.jl uses LightXML to parse both the GPX track file and the SVG. 
+
+*Currently not many more track entries than 1k can be parsed. Any number significant higher kills the Julia-kernel with no explanations. The error could be in the browser-backend communication or in the LightXML.*
+
+Run:
+
+    copy the gpx-to-svg.jl in jupyter notebook and make shure the gpx/1k.gpx file is available  
 
 ###4. C
 
