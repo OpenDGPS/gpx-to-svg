@@ -38,7 +38,7 @@ Read a track file via XmlHTTPRequest method, get all track points and build a pa
 
 Run:
 
-    simpy open italy-map-js.svg in your fav browser. 
+    open italy-map-js.svg in your fav browser. 
     
 *Make sure to enable XmlHTTPRequest for file:// protocoll, otherwise run the request from a local http-server.*
 
