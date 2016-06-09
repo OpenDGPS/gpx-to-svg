@@ -7,6 +7,8 @@ The sample map (svg/italy-map.svg) is free licenced for non commercial use by ht
 
 ![svg sample](https://raw.githubusercontent.com/OpenDGPS/gpx-to-svg/master/media/sample.png "Sample SVG Output")
 
+*Sample SVG rendering from multiple trips in Umbria, Italy.*
+
 ###1. XSLT
 
 Reads SVG file as map and transform a new SVG file
