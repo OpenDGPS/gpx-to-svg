@@ -25,10 +25,12 @@ The map has to be normalized. Set $lat-root to the coordinates of
   the top coordinates (svg position:y) and $lon-root to the very left coordinates (svg position:x)
 
 Run:
-  java -jar <xslt2-processor> svg/italy-map.svg xslt/gpx-to-svg.xslt > out/out.svg
+
+    java -jar <xslt2-processor> svg/italy-map.svg xslt/gpx-to-svg.xslt > out/out.svg
 
 Run (with saxon):
-  java -jar saxon9.jar svg/italy-map.svg xslt/gpx-to-svg.xslt > out/out.svg
+
+    java -jar saxon9.jar svg/italy-map.svg xslt/gpx-to-svg.xslt > out/out.svg
   
 ###2. JavaScript
 
