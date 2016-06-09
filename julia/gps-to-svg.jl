@@ -1,6 +1,4 @@
-using Requests;
-import Requests: get, post, put, delete, options;
-using Gumbo;
+# uncomment if first time using LightXML
 # Pkg.add("LightXML");
 using LightXML;
 
