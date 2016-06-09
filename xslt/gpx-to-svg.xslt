@@ -16,10 +16,10 @@
         the top coordinates (svg position:y) and $lon-root to the very left coordinates (svg position:x)
     
     Run:
-        java -jar <xslt2-processor> italy-map.svg gpx-to-svg.xslt > out.svg
+        java -jar <xslt2-processor> svg/italy-map.svg xslt/gpx-to-svg.xslt > out/out.svg
         
     Run (with saxon):
-        java -jar saxon9.jar italy-map.svg gpx-to-svg.xslt > out.svg
+        java -jar saxon9.jar svg/italy-map.svg xslt/gpx-to-svg.xslt > out/out.svg
         
     Author: info@opendgps.de
     
@@ -49,7 +49,7 @@
     <xsl:template match="*[name() = 'path'][@id = 'odgps-insert']">
         <xsl:for-each select="$doc-list">
             <xsl:variable name="path">
-                <xsl:apply-templates select="doc(concat(current(),'.gpx'))//*[name() = 'trkpt'][1]" mode="gpx-track"/>
+                <xsl:apply-templates select="doc(concat('../gpx/',current(),'.gpx'))//*[name() = 'trkpt'][1]" mode="gpx-track"/>
             </xsl:variable>
             <xsl:element name="path" namespace="http://www.w3.org/2000/svg">
                 <xsl:attribute name="class" select="concat('way color',position(),' ',current())"/>
