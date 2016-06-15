@@ -54,5 +54,14 @@ Run:
 
 ###4. C
 
-TODO: create sample
+The C implementation (c/gpx-to-svg.c) use libxml2 to read, parse and write both the SVG and the GPX files. The sample GPX (gpx/train-track.gpx) contains 7000+ track points. With under 0.2 sec on a MacBook (2,4GHz Core 2 Duo) it is of course the fastest solution.
+
+Compile:
+
+    gcc -Wall -lxml2 -I /usr/include/libxml2 -o c/xpath c/xpath.c
+
+Run:
+
+    c/xpath <SVG file> <GPX file>
+
 
