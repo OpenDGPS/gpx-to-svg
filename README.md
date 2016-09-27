@@ -64,4 +64,9 @@ Run:
 
     c/xpath <SVG file> <GPX file>
 
+###5. Swift (<=2.3)
+
+The Swift implementation (swift/gpx-to-svg.swift) use Fuzi XML/XPath Framework (https://github.com/cezheng/Fuzi) to read, parse and write both the SVG and the GPX files. Even if this is a first draft it is fast as the C version. Mainly because both make heavily usage of libXML2. 
+
+Usage: create a new Project in XCode, replace the main.swift with the content of gpx-to-svg.swift, follow the instructions auf Fuzi and add the 1k.gpx to the project.
 
