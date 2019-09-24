@@ -9,7 +9,7 @@ The sample map (svg/italy-map.svg) is free licenced for non commercial use by ht
 
 *Sample SVG rendering from multiple trips in Umbria, Italy.*
 
-###1. XSLT
+### 1. XSLT
 
 Reads SVG file as map and transform a new SVG file
 
@@ -32,7 +32,7 @@ Run (with saxon):
 
     java -jar saxon9.jar svg/italy-map.svg xslt/gpx-to-svg.xslt > out/out.svg
   
-###2. JavaScript
+### 2. JavaScript
 
 Read a track file via XmlHTTPRequest method, get all track points and build a pathString from @lat/@lon.
 
@@ -42,7 +42,7 @@ Run:
     
 *Make sure to enable XmlHTTPRequest for file:// protocoll, otherwise run the request from a local http-server.*
 
-###3. Julia
+### 3. Julia
 
 gpx-to-svg.jl uses LightXML to parse both the GPX track file and the SVG. 
 
@@ -52,7 +52,7 @@ Run:
 
     copy the gpx-to-svg.jl into a jupyter notebook and make sure the gpx/1k.gpx file is available  
 
-###4. C
+### 4. C
 
 The C implementation (c/gpx-to-svg.c) use libxml2 to read, parse and write both the SVG and the GPX files. The sample GPX (gpx/train-track.gpx) contains 7000+ track points. With under 0.2 sec on a MacBook (2,4GHz Core 2 Duo) it is of course the fastest solution.
 
@@ -64,7 +64,7 @@ Run:
 
     c/xpath <SVG file> <GPX file>
 
-###5. Swift (<=2.3)
+### 5. Swift (<=2.3)
 
 The Swift implementation (swift/gpx-to-svg.swift) use Fuzi XML/XPath Framework (https://github.com/cezheng/Fuzi) to read, parse and write both the SVG and the GPX files. Even if this is a first draft it is fast as the C version. Mainly because both make heavily usage of libXML2. 
 
